@@ -14,7 +14,7 @@ const getQueryParam = (key) => {
 };
 
 const fetchDocument = () => {
-  fetch(`../../news/src/data/${getQueryParam("n")}.json`)
+  fetch(`/Columbus-Ghanaian-SDA-Website/news/src/data/${getQueryParam("n")}.json`)
     .then((response) => response.json())
     .then((data) => createDocument(data))
     .catch((error) => {
@@ -66,7 +66,9 @@ const createDocument = (data) => {
   document.getElementById("cg-read-pop-date").textContent = newsInformation.date;
 
   if (newsInformation && newsInformation.thumbnail) {
-    document.getElementById("cg-read-pop-thumbnail").src = `../../news/src/data/files/${newsInformation.thumbnail}`;
+    document.getElementById(
+      "cg-read-pop-thumbnail"
+    ).src = `/Columbus-Ghanaian-SDA-Website/news/src/data/files/${newsInformation.thumbnail}`;
   } else {
     document.getElementById("cg-read-pop-thumbnail").style.display = "none";
   }

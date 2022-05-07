@@ -1,5 +1,5 @@
 const fetchInventory = () => {
-  fetch("../../news/src/inventory.json")
+  fetch("/Columbus-Ghanaian-SDA-Website/news/src/inventory.json")
     .then((response) => response.json())
     .then((data) => populate(data));
 };
