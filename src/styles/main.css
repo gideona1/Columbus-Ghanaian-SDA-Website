@@ -361,7 +361,7 @@ section {
   }
 
   .cg-side-by-side > div:nth-of-type(1) {
-    margin-right: auto;
+    margin-right: 0px !important;
     margin-bottom: 20px;
   }
 }
