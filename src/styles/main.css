@@ -30,7 +30,7 @@ body {
 }
 
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: var(--cg-font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -344,6 +344,10 @@ section {
 @media screen and (max-width: 868px) {
   .desktop-no-show {
     display: block !important;
+  }
+
+  body {
+    position: relative;
   }
 
   .mobile-no-show {
