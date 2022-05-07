@@ -71,14 +71,66 @@ customElements.define(
 
             <div class="desktop-no-show" style="width: 100%">
               <div class="cg-home-icon-cont">
-                <a title="Menu" class="cg-home-icon header-icon" href="#">
+                <button title="Menu" class="cg-home-icon header-icon" onclick="toggleNavigation(true)">
                   <i class="fas fa-bars"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </header>
+      `;
+    }
+  }
+);
+
+customElements.define(
+  "cg-mobile-navigation",
+  class extends HTMLElement {
+    constructor() {
+      super();
+      this.innerHTML = `
+      <nav id="cg-mobile-navigation" class="cg-mobile-navigation desktop-no-show" style="display: none !important">
+      <div class="cg-max-container">
+        <div style="margin-bottom: 20px; margin-top: 20px">
+          <button
+            style="background-color: var(--cg-outline); border: none; padding: 10px; border-radius: 5px"
+            title="Close"
+            class="cg-mobile-nav-close"
+            onclick="toggleNavigation(false);"
+          >
+            <i class="fas fa-xmark" style="font-size: 1.7em"></i>
+          </button>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--cg-outline); padding-bottom: 10px">
+          <h2 style="font-size: 1.3em; display: inline-block">Columbus Ghanaian SDA</h2>
+          <a class="cg-link-btn" style="display: block" href="/Columbus-Ghanaian-SDA-Website/">Home</a>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--cg-outline); padding-bottom: 10px">
+          <h2 style="font-size: 1.3em; display: inline-block">Our Ministries</h2>
+          <a class="cg-link-btn" style="display: block" href="#">Our Team</a>
+          <a class="cg-link-btn" style="display: block" href="#">Youth</a>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--cg-outline); padding-bottom: 10px">
+          <h2 style="font-size: 1.3em; display: inline-block">Our Resources</h2>
+          <a class="cg-link-btn" style="display: block" href="/Columbus-Ghanaian-SDA-Website/live/">Live / Videos</a>
+          <a class="cg-link-btn" style="display: block" href="/Columbus-Ghanaian-SDA-Website/news/">News</a>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--cg-outline); padding-bottom: 10px">
+          <h2 style="font-size: 1.3em; display: inline-block">Let's Connect</h2>
+          <a class="cg-link-btn" style="display: block" href="/Columbus-Ghanaian-SDA-Website/where-to-start/">Where To Start?</a>
+          <a class="cg-link-btn" style="display: block" href="/Columbus-Ghanaian-SDA-Website/contact-us/">Contact Us</a>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--cg-outline); padding-top: 10px; padding-bottom: 10px">
+          <a class="cg-link-btn" style="display: block" href="/Columbus-Ghanaian-SDA-Website/giving/">Giving</a>
+        </div>
+      </div>
+    </nav>
       `;
     }
   }
