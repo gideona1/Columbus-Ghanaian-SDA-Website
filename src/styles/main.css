@@ -351,7 +351,11 @@ section {
   }
 
   .cg-hero-content-quote {
-    font-size: 2.5em !important;
+    font-size: 1.7em !important;
+  }
+
+  .cg-main-hero-bg {
+    background-attachment: scroll !important;
   }
 
   .grid-to-block {
