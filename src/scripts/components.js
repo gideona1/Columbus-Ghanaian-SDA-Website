@@ -91,7 +91,7 @@ customElements.define(
       super();
       this.innerHTML = `
       <nav id="cg-mobile-navigation" class="cg-mobile-navigation desktop-no-show" style="display: none !important">
-      <div class="cg-max-container">
+      <div class="cg-max-container" style="padding-bottom: 60px;">
         <div style="margin-bottom: 20px; margin-top: 20px">
           <button
             style="background-color: var(--cg-outline); border: none; padding: 10px; border-radius: 5px"

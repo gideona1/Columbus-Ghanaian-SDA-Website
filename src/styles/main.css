@@ -194,8 +194,6 @@ nav > ul > li {
   overflow-y: auto;
   z-index: 10;
   animation: 0.5s img-animated var(--cg-bezier);
-
-  /* padding: 20px; */
 }
 
 @keyframes submenu-initial {
