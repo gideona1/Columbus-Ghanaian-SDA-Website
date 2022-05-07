@@ -1,0 +1,36 @@
+{
+  "information": {
+    "title": "End of Year Revival: It's Not Too Late",
+    "description": "Join the Columbus Ghanaian SDA – English Service as they end the year with a mega revival summit.",
+    "date": "December 19, 2021",
+    "type": "Event",
+    "thumbnail": "EndOfYearRevival.png"
+  },
+  "body": [
+    {
+      "theme": "accent",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Event: It's Not Too Late"
+        },
+        {
+          "type": "p",
+          "text": "Life is full of ups and downs. 2021 is coming to an end and a lot happened this year, some people received their blessings while other people’s hearts are full of hatred, disappointments, unforgiving, jealousy and so many things."
+        },
+        {
+          "type": "p",
+          "text": "However you are feeling “ITS NOT TOO LATE” Join the Columbus Ghanaian SDA – English Service as they end the year with a mega REVIVAL SUMMIT. This will make a huge difference in how you end the year. Every night at 7:30pm from December 25th to January 1st."
+        },
+        {
+          "type": "ol",
+          "texts": ["Free dinner", "Gifts"]
+        },
+        {
+          "type": "p",
+          "text": "End the year with a blessed heart and your life will not be the same in the year 2022."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Columbus Ghanaian SDA</title>
+
+    <link href="./src/styles/main.css" rel="stylesheet" />
+    <link href="./src/styles/p-index.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./src/scripts/components.js" defer></script>
+    <script src="https://kit.fontawesome.com/2be1444882.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+    <script src="./src/scripts/p-index.js" defer></script>
+    <script src="./src/scripts/animations/indexAnimation.js" defer></script>
+  </head>
+
+  <body>
+    <cg-header></cg-header>
+    <main>
+      <section class="cg-section-no-padding">
+        <div class="cg-main-hero">
+          <div class="cg-main-hero-bg">
+            <div class="cg-hero-content">
+              <div class="cg-max-container">
+                <h1>Columbus Ghanaian SDA</h1>
+                <div class="cg-hero-content-quote" style="text-align: left">
+                  "For where <span class="highlight animated">two or three</span><br />
+                  are gathered together <span class="highlight animated">in my name</span>,<br />
+                  there am I in the <span class="highlight animated">midst of them.</span>"
+                </div>
+                <div class="cg-hero-content-quote-loc" style="text-align: left; font-weight: 600; font-size: 1.3em">
+                  Matthew 18:20
+                </div>
+
+                <div style="margin-top: 50px">
+                  <a class="cg-link-btn" style="margin-bottom: 5px" href="./about/">Learn more about us</a>
+                  <a class="cg-link-btn" href="./contact-us/">First time visitor</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="cg-section-no-padding"
+        id="cg-section-1"
+        style="background-color: var(--cg-accent-f); padding-top: 20px; padding-bottom: 80px"
+      >
+        <div class="cg-max-container">
+          <div class="cg-side-by-side grid-to-block">
+            <div id="cg-text-animation-s1" class="script-animated" style="text-align: center">
+              <p class="cg-font-secondary" style="font-size: 2em; line-height: 1.5em; padding-bottom: 30px">
+                Join us in person <br />at <span class="highlight">Saturday at 9:00AM</span><br />
+                or via <span class="highlight">Livestream at 10:30AM</span>
+              </p>
+              <span class="cg-live-activity not-live">Join us Saturday <span style="font-size: 1em">●</span></span
+              ><br />
+              <a class="cg-link-btn light" href="#">Watch previous sermons</a>
+            </div>
+            <div id="cg-image-animation-s1" class="cg-image-animation mobile-no-show">
+              <img
+                src="./src/images/17218639_773569572820071_5724974247757021872_o.jpeg"
+                width="100%"
+                height="100%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="cg-section-2"
+        style="background: linear-gradient(to right, var(--cg-bg-invert), var(--cg-bg-invert)); color: #ffffff"
+      >
+        <div class="cg-max-container">
+          <div class="cg-side-by-side grid-to-block">
+            <div>
+              <img
+                src="./src/images/57370563_1286073568236333_3174842234679853056_n.jpeg"
+                class="script-animated"
+                id="cg-image-animation-s2"
+                width="75%"
+                height="75%"
+                style="
+                  border-radius: 5px;
+                  border: 3px solid rgba(255, 255, 255, 0.05);
+                  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 50px -12px;
+                "
+                alt=""
+              />
+            </div>
+            <div style="padding-left: var(--cg-padding)" class="script-animated" id="cg-text-animation-s2">
+              <p style="color: var(--cg-accent-s)">Information</p>
+              <h2>Who are we?</h2>
+              <p style="font-size: 1.2em">
+                The Columbus Ghanaian Seventh-Day Adventist Church is a member congregation of the worldwide faith
+                community of Christians known as Seventh-Day Adventists.
+              </p>
+              <a class="cg-link-btn light" href="./about/">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="cg-section-no-padding"
+        id="cg-section-3"
+        style="background: #312b23; color: #ffffff; padding-top: 40px; padding-bottom: 40px"
+      >
+        <div id="cg-bg-animation-s3" aria-hidden="true" class="cg-vit-c-stage script-animated mobile-no-show"></div>
+        <div class="cg-max-container" style="z-index: 2; position: relative; min-height: 300px">
+          <div style="padding-top: 80px; padding-bottom: 80px">
+            <p style="color: var(--cg-accent-s)">Videos</p>
+            <h2>Marriage Vitamin C's</h2>
+            <p style="font-size: 1.2em">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid maiores adipisci repellendus voluptatem
+              sunt facilis! Accusantium distinctio assumenda unde amet saepe laudantium. Delectus, omnis voluptates
+              ratione accusantium molestias quia a!
+            </p>
+            <a
+              class="cg-link-btn light"
+              href="https://www.facebook.com/page/773507386159623/search/?q=Marriage%20Vitamin%20C%27s"
+              target="_blank"
+              >Watch videos</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <cg-footer></cg-footer>
+  </body>
+</html>

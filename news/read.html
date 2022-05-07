@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>... | News - Columbus Ghanaian SDA</title>
+
+    <link href="../src/styles/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../src/scripts/p-read.js" defer></script>
+    <script src="../src/scripts/components.js" defer></script>
+    <script src="https://kit.fontawesome.com/2be1444882.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  </head>
+
+  <body>
+    <cg-header></cg-header>
+    <main>
+      <section>
+        <div class="cg-main-header">
+          <div class="cg-max-container">
+            <div class="cg-side-by-side grid-to-block">
+              <div>
+                <ul class="breadcrumb">
+                  <li><a href="../">Home</a></li>
+                  <li><a href="./">News</a></li>
+                  <li><a href="#" id="cg-read-pop-bc" class="current">...</a></li>
+                </ul>
+                <h1 id="cg-read-pop-title">Loading</h1>
+                <p id="cg-read-pop-description">...</p>
+                <p style="color: var(--cg-accent-p)" id="cg-read-pop-date">...</p>
+              </div>
+
+              <div style="text-align: center">
+                <img
+                  src="#"
+                  id="cg-read-pop-thumbnail"
+                  width="60%"
+                  height="60%"
+                  style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 50px -12px"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="cg-read-pop-section"></div>
+    </main>
+    <cg-footer></cg-footer>
+  </body>
+</html>
