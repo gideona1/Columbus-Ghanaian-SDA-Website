@@ -36,7 +36,7 @@ customElements.define(
             <nav class="mobile-no-show">
               <ul>
                 <li>
-                  <a class="cg-nav-button" href="./../about/">Who are we?</a>
+                  <a class="cg-nav-button" href="/about/">Who are we?</a>
                 </li>
 
                 <li>
@@ -50,21 +50,21 @@ customElements.define(
                 <li>
                   <a class="cg-nav-button" href="#">Resources <i style="font-size: 12px" aria-hidden="true" class="fa-solid fa-chevron-down"></i></a>
                   <div class="submenu">
-                    <a href="./../live/">Live / Videos</a>
-                    <a href="./../news/">News</a>
+                    <a href="/live/">Live / Videos</a>
+                    <a href="/news/">News</a>
                   </div>
                 </li>
 
                 <li>
                   <a class="cg-nav-button" href="#">Connect <i style="font-size: 12px" aria-hidden="true" class="fa-solid fa-chevron-down"></i></a>
                   <div class="submenu">
-                    <a href="./../where-to-start/">Where To Start?</a>
-                    <a href="./../contact-us/">Contact Us</a>
+                    <a href="/where-to-start/">Where To Start?</a>
+                    <a href="/contact-us/">Contact Us</a>
                   </div>
                 </li>
 
                 <li>
-                  <a class="cg-nav-button" href="./../giving/">Giving</a>
+                  <a class="cg-nav-button" href="/giving/">Giving</a>
                 </li>
               </ul>
             </nav>
@@ -93,7 +93,7 @@ customElements.define(
         <footer style="position: relative; z-index: 2">
         <div class="cg-max-container cg-footer-section grid-to-block">
           <div>
-          <a href="./../">
+          <a href="/">
           
             <svg
               aria-label="Home"
@@ -123,23 +123,23 @@ customElements.define(
             </p>
   
             <a href="tel:+1-614-471-5231">614-471-5231 </a><br />
-            <a href="./../contact-us" style="font-weight: bold">Contact Us</a><br />
+            <a href="/contact-us/" style="font-weight: bold">Contact Us</a><br />
           </div>
   
           <div>
-            <a href="./../about">Who Are We?</a><br />
-            <a href="./../where-to-start">Where To Start</a><br />
+            <a href="/about/">Who Are We?</a><br />
+            <a href="/where-to-start/">Where To Start</a><br />
           </div>
   
           <div>
             <a href="#">Our Team</a><br />
             <a href="#">Youth</a><br />
-            <a href="./../giving">Giving</a><br />
+            <a href="/giving/">Giving</a><br />
           </div>
   
           <div>
-            <a href="./../news">News</a><br />
-            <a href="./../live">Livestreams</a><br />
+            <a href="/news/">News</a><br />
+            <a href="/live/">Livestreams</a><br />
           </div>
   
           <div>
