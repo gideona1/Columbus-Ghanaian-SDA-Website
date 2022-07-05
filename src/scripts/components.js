@@ -66,6 +66,10 @@ customElements.define(
                 <li>
                   <a class="cg-nav-button" href="/Columbus-Ghanaian-SDA-Website/giving/">Giving</a>
                 </li>
+
+                <li>
+                  <a class="cg-nav-button" href="/Columbus-Ghanaian-SDA-Website/login/">Login</a>
+                </li>
               </ul>
             </nav>
 
@@ -213,9 +217,15 @@ customElements.define(
     constructor() {
       super();
 
-      const color = this.getAttribute("color") ? this.getAttribute("color") : "#2f3542";
-      const width = this.getAttribute("width") ? this.getAttribute("width") : "60px";
-      const height = this.getAttribute("height") ? this.getAttribute("height") : "60px";
+      const color = this.getAttribute("color")
+        ? this.getAttribute("color")
+        : "#2f3542";
+      const width = this.getAttribute("width")
+        ? this.getAttribute("width")
+        : "60px";
+      const height = this.getAttribute("height")
+        ? this.getAttribute("height")
+        : "60px";
 
       this.innerHTML = `
       <svg

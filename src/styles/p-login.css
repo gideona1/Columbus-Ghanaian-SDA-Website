@@ -1,0 +1,66 @@
+html,
+body,
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.cg-login-main-container {
+  display: grid;
+  grid-template-columns: 500px calc(100% - 400px);
+  width: 100%;
+  height: 100%;
+}
+
+.cg-login-container {
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 10px 0px 50px -12px;
+  background-color: var(--cg-bg-primary);
+  border-right: 1px solid var(--cg-outline);
+  padding: 40px;
+}
+
+.cg-login-container > h1 {
+  /* font-family: var(--cg-font-primary); */
+  font-size: 2em;
+  border: none;
+}
+
+.cg-bg-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  background-image: url(../images/hero-image\ copy.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cg-bg-container-header {
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: 3px solid var(--cg-accent-s);
+}
+
+.cg-bg-container-description {
+  margin-top: 5px;
+  font-family: var(--cg-font-secondary);
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+@media screen and (max-width: 868px) {
+  .cg-login-main-container {
+    display: block;
+  }
+
+  .cg-bg-container {
+    display: none;
+  }
+}
