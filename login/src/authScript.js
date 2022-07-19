@@ -13,13 +13,17 @@ const authLogin = () => {
 
   const variables = { email, password };
 
-  fetchAuthServer(query, variables, (data, error) => {
+  fetchServer(query, variables, (data, error) => {
     if (error) {
       console.log("ERROR: " + error.message);
       button.removeAttribute("disabled");
     } else {
       button.textContent = "Redirecting...";
       console.log("Log in success, cookie stored");
+
+      setTimeout(() => {
+        window.location.href = "../dashboard";
+      }, 1250);
       document.getElementsByTagName("main")[0].classList.add("cg-lg-success");
     }
   });
