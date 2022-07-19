@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Live - Columbus Ghanaian SDA</title>
+    <title>Login - Columbus Ghanaian SDA</title>
 
     <link href="../src/styles/main.css" rel="stylesheet" />
     <link href="../src/styles/p-login.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
 
     <script src="../src/scripts/main.js" defer></script>
     <script src="../src/scripts/components.js" defer></script>
+    <script src="./src/authScript.js" defer></script>
     <script src="https://kit.fontawesome.com/2be1444882.js" crossorigin="anonymous"></script>
 
     <script
@@ -41,25 +42,25 @@
           <p class="cg-header-description">Enter your credentials to access your account</p>
 
           <div style="border-top: 1px solid var(--cg-outline); padding-top: 20px; padding-bottom: 20px">
-            <div>
-              <label>Email Address</label>
-              <input placeholder="name@email.com" type="text" />
+            <div style="margin-bottom: 20px">
+              <label for="cg-sn-form-email">Email Address</label>
+              <input id="cg-sn-form-email" placeholder="name@email.com" type="text" />
             </div>
 
             <div>
-              <label>Password</label>
-              <input type="text" />
+              <label for="cg-sn-form-password">Password</label>
+              <input id="cg-sn-form-password" type="password" />
             </div>
 
-            <button class="cg-link-btn light" style="margin-top: 20px; font-size: 1em" href="./about/">Next</button>
+            <button id="cg-sn-form-submit" onclick="authLogin()" class="cg-link-btn light" style="margin-top: 20px; font-size: 1em">Log in</button>
           </div>
 
-          <p>Not a member? <a>Sign Up</a></p>
+          <p>Not a member? <a href="#">Sign Up</a></p>
         </div>
         <div class="cg-bg-container">
           <cg-sda-logo color="#ffaf53" style="display: block; margin-bottom: 20px"></cg-sda-logo>
           <div class="cg-bg-container-header">Columbus Ghanaian SDA</div>
-          <p class="cg-bg-container-description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          <p class="cg-bg-container-description">Welcome back member.</p>
         </div>
       </div>
     </main>

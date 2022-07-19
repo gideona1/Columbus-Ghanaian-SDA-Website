@@ -4,3 +4,25 @@ const toggleNavigation = (state) => {
   const navigation = document.getElementById("cg-mobile-navigation");
   navigation.style = state ? "display: block !important;" : "display: none !important;";
 };
+
+const fetchAuthServer = (query, variables, callback) => {
+  const server = "http://localhost:4000/graphql";
+
+  const graphql = JSON.stringify({
+    query,
+    variables,
+  });
+
+  const requestOptions = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: graphql,
+    credentials: "same-origin",
+  };
+
+  fetch(server, requestOptions)
+    .then((response) => response.json())
+    .then((response) => callback(response.data, response.errors != null ? response.errors[0] : undefined));
+};
