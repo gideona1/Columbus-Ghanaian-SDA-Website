@@ -6,7 +6,7 @@ const toggleNavigation = (state) => {
 };
 
 const fetchServer = (query, variables, callback) => {
-  const server = "http://localhost:4000/graphql";
+  const server = "https://cgsda-server.herokuapp.com/graphql";
 
   const graphql = JSON.stringify({
     query,
