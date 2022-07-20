@@ -6,7 +6,7 @@
   --cg-bg-secondary: #dcdde1;
   --cg-bg-invert: #1d1d1c;
   --cg-text: #2f3542;
-  --cg-outline: rgba(0, 0, 0, 0.05);
+  --cg-outline: rgba(0, 0, 0, 0.075);
   --cg-padding: 10px;
   --cg-bezier: cubic-bezier(0.5, 0, 0, 0.75);
 
@@ -77,7 +77,7 @@ h1 {
   font-family: var(--cg-font-secondary);
   margin-top: 0px;
   margin-bottom: 10px;
-  animation: 2s text-animated var(--cg-bezier);
+  animation: 2.2s text-animated var(--cg-bezier);
 }
 
 h2 {
@@ -87,6 +87,36 @@ h2 {
   font-family: var(--cg-font-secondary);
   display: inline;
   margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+input {
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid var(--cg-outline);
+  border-radius: 5px;
+  outline: 0px solid transparent;
+  margin-bottom: 7px;
+  transition: outline 0.25s var(--cg-bezier), border 0.3s var(--cg-bezier);
+}
+
+input:hover {
+  border: 1px solid var(--cg-accent-s);
+}
+
+input:active,
+input:focus {
+  background-color: transparent;
+  outline: 3px solid #ffe5c8;
+  border: 1px solid var(--cg-accent-s);
 }
 
 .cg-font-secondary {
@@ -261,6 +291,11 @@ nav > ul > li:hover .submenu,
   transition: 0.3s background-color var(--cg-bezier), 0.3s color var(--cg-bezier);
 }
 
+.cg-link-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 .cg-link-btn:hover,
 .cg-link-btn:focus {
   border: 2px solid var(--cg-outline);
@@ -333,7 +368,7 @@ section {
   padding-bottom: 0px;
 }
 
-.cg-main-header .cg-header-description {
+.cg-header-description {
   animation: 2s text-animated var(--cg-bezier);
 }
 

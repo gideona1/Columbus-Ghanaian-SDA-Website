@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Columbus Ghanaian SDA</title>
+
+    <link href="../src/styles/main.css" rel="stylesheet" />
+    <link href="../src/styles/p-login.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../src/scripts/main.js" defer></script>
+    <script src="../src/scripts/components.js" defer></script>
+    <script src="./src/authScript.js" defer></script>
+    <script src="https://kit.fontawesome.com/2be1444882.js" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="cg-login-main-container">
+        <div class="cg-login-container">
+          <a href="../">
+            <cg-sda-logo color="#ffaf53" style="display: block; margin-bottom: 20px"></cg-sda-logo>
+          </a>
+
+          <h1>Log in</h1>
+          <p class="cg-header-description">Enter your credentials to access your account</p>
+
+          <div style="border-top: 1px solid var(--cg-outline); padding-top: 20px; padding-bottom: 20px">
+            <div style="margin-bottom: 20px">
+              <label for="cg-sn-form-email">Email Address</label>
+              <input id="cg-sn-form-email" placeholder="name@email.com" type="text" />
+            </div>
+
+            <div>
+              <label for="cg-sn-form-password">Password</label>
+              <input id="cg-sn-form-password" type="password" />
+            </div>
+
+            <button id="cg-sn-form-submit" onclick="authLogin()" class="cg-link-btn light" style="margin-top: 20px; font-size: 1em">Log in</button>
+          </div>
+
+          <p>Not a member? <a href="#">Sign Up</a></p>
+        </div>
+        <div class="cg-bg-container">
+          <cg-sda-logo color="#ffaf53" style="display: block; margin-bottom: 20px"></cg-sda-logo>
+          <div class="cg-bg-container-header">Columbus Ghanaian SDA</div>
+          <p class="cg-bg-container-description">Welcome back member.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
