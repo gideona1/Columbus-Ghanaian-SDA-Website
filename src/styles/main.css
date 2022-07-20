@@ -6,7 +6,7 @@
   --cg-bg-secondary: #eeeeee;
   --cg-bg-invert: #1d1d1c;
   --cg-text: #2f3542;
-  --cg-outline: rgba(0, 0, 0, 0.05);
+  --cg-outline: rgba(0, 0, 0, 0.075);
   --cg-padding: 10px;
   --cg-bezier: cubic-bezier(0.5, 0, 0, 0.75);
 
@@ -283,6 +283,7 @@ nav > ul > li:hover .submenu,
 } */
 
 .cg-link-btn {
+  font-size: 1em;
   display: inline-block;
   padding: 15px 20px;
   border-radius: 5px;

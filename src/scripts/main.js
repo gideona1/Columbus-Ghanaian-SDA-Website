@@ -24,5 +24,9 @@ const fetchServer = (query, variables, callback) => {
 
   fetch(server, requestOptions)
     .then((response) => response.json())
-    .then((response) => callback(response.data, response.errors != null ? response.errors[0] : undefined));
+    .then((response) => callback(response.data, response.errors != null ? response.errors[0] : undefined))
+    .catch((error) => {
+      callback({}, { message: "Unknown server error: " + error.message });
+      console.error(error);
+    });
 };
