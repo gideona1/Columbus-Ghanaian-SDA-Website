@@ -5,7 +5,7 @@ const toggleNavigation = (state) => {
   navigation.style = state ? "display: block !important;" : "display: none !important;";
 };
 
-const fetchAuthServer = (query, variables, callback) => {
+const fetchServer = (query, variables, callback) => {
   const server = "http://localhost:4000/graphql";
 
   const graphql = JSON.stringify({
@@ -19,10 +19,14 @@ const fetchAuthServer = (query, variables, callback) => {
       "Content-Type": "application/json",
     },
     body: graphql,
-    credentials: "same-origin",
+    credentials: "include",
   };
 
   fetch(server, requestOptions)
     .then((response) => response.json())
-    .then((response) => callback(response.data, response.errors != null ? response.errors[0] : undefined));
+    .then((response) => callback(response.data, response.errors != null ? response.errors[0] : undefined))
+    .catch((error) => {
+      callback({}, { message: "Unknown server error: " + error.message });
+      console.error(error);
+    });
 };

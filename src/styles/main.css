@@ -3,7 +3,7 @@
   --cg-accent-s: #ffaf53;
   --cg-accent-f: #faf2eb;
   --cg-bg-primary: #f5f6fa;
-  --cg-bg-secondary: #dcdde1;
+  --cg-bg-secondary: #eeeeee;
   --cg-bg-invert: #1d1d1c;
   --cg-text: #2f3542;
   --cg-outline: rgba(0, 0, 0, 0.075);
@@ -26,6 +26,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
+  height: 100vh;
   max-width: 100vw !important;
 }
 
@@ -282,6 +283,7 @@ nav > ul > li:hover .submenu,
 } */
 
 .cg-link-btn {
+  font-size: 1em;
   display: inline-block;
   padding: 15px 20px;
   border-radius: 5px;
@@ -312,6 +314,11 @@ nav > ul > li:hover .submenu,
   border: 2px solid var(--cg-accent-s);
   background-color: var(--cg-accent-f);
   color: var(--cg-text);
+}
+
+.cg-link-btn.full {
+  width: 100%;
+  display: block;
 }
 
 /* Footer */
