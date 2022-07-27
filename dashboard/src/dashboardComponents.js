@@ -97,7 +97,7 @@ customElements.define(
         <section class="secondary hidden" id="cg-ds-no-access">
           <div class="cg-max-container">
             <h2>No Access</h2>
-            <p>Your account does not have privileges to modify user accounts</p>
+            <p>Your account does not have privileges to modify other accounts</p>
             <button class="cg-link-btn light" onclick="getAllUsers()">Try again</button>
           </div>
         </section>
