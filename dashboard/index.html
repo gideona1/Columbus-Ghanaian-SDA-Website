@@ -16,8 +16,11 @@
     />
 
     <script src="../src/scripts/main.js" defer></script>
-    <script src="./src/dashboardScript.js" defer></script>
+
     <script src="../src/scripts/components.js" defer></script>
+    <script src="./src/dashboardComponents.js" defer></script>
+
+    <script src="./src/dashboardScript.js" defer></script>
 
     <script src="https://kit.fontawesome.com/2be1444882.js" crossorigin="anonymous"></script>
 
@@ -31,26 +34,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
   </head>
 
-  <body class="cg-fetching">
-    <header></header>
-    <main>
-      <div class="cg-dashboard-left-panel">
-        <div class="cg-dashboard-lp-user">
-          <div class="name">--</div>
-          <div class="role">--</div>
+  <body>
+    <div class="cg-ds-loading-overlay">
+      <i id="cg-ds-main-loading-ind" style="font-size: 1.5em" class="fa-solid fa-spinner fetching-icon"></i>
+    </div>
+
+    <div class="cg-ds-main-container cg-fetching">
+      <header>
+        <div class="cg-icon">Columbus Ghanaian SDA</div>
+      </header>
+      <main>
+        <div class="cg-dashboard-left-panel">
+          <div class="cg-dashboard-lp-user">
+            <div class="name">
+              <span id="cg-ds-display-name">--</span>
+              <span id="cg-ds-display-verified" style="color: var(--cg-accent-s)"></span>
+            </div>
+            <div class="role">--</div>
+          </div>
+
+          <div class="cg-dashboard-lp-option">
+            <button data-for-section="cg-ds-home" class="cg-ds-nav-btn selected" onclick="toggleSection('cg-ds-home')">
+              <i class="fa-solid fa-house"></i> Home
+            </button>
+            <button class="cg-ds-nav-btn"><i class="fa-solid fa-folder-open"></i> Records</button>
+            <button class="cg-ds-nav-btn"><i class="fa-solid fa-user"></i> Your Account</button>
+
+            <h2>Admin</h2>
+            <button data-for-section="cg-ds-manage-user" class="cg-ds-nav-btn" onclick="toggleSection('cg-ds-manage-user', getAllUsers())">
+              <i class="fa-solid fa-user-group"></i> Manage Users
+            </button>
+          </div>
+
+          <div class="cg-dashboard-lp-footer">
+            <button onclick="logoutUser()" style="margin-bottom: 10px" class="cg-link-btn full">
+              Log out <i id="cg-ds-logout-ind" class="fa-solid fa-spinner fetching-icon"></i>
+            </button>
+            <a href="../">Return to home</a>
+          </div>
         </div>
 
-        <div class="cg-dashboard-lp-option">
-          <button class="cg-sd-nav-btn selected"><i class="fa-solid fa-house"></i> Home</button>
-          <button class="cg-sd-nav-btn"><i class="fa-solid fa-folder-open"></i> Records</button>
-          <button class="cg-sd-nav-btn"><i class="fa-solid fa-person"></i> Your Account</button>
+        <div class="cg-dashboard-main">
+          <cg-ds-home data-section="cg-ds-home"></cg-ds-home>
+          <cg-ds-manage-user data-section="cg-ds-manage-user" class="hidden"></cg-ds-manage-user>
         </div>
-
-        <div class="cg-dashboard-lp-footer">
-          <button onclick="logoutUser()" class="cg-link-btn full">Log out</button>
-        </div>
-      </div>
-      <div class="cg-dashboard-main"></div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
